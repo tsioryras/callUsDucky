@@ -1,10 +1,14 @@
 document.getElementById("myInput").value = window.location.href;
-document.getElementById('copy-link').innerHTML = "copy link";
 
 function copyLink() {
+    setTimeout(function () {
+        saveLink();
+    }, 1000);
+}
+
+function saveLink() {
     let copyText = document.getElementById("myInput");
     copyText.select();
-    copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
-    document.getElementById('copy-link').innerHTML = "link copied!";
+    document.getElementById('copy-link').innerHTML = "copied";
 }

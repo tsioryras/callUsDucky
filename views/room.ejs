@@ -17,13 +17,13 @@
     <script src="action.js" defer></script>
     <title>callUsDucky</title>
     <style>
-        body{
+        body {
             background: black;
         }
 
-        #video-grid{
+        #video-grid {
             padding: 20px;
-            }
+        }
 
         video {
             width: 100%;
@@ -33,9 +33,13 @@
             border-radius: 5px;
         }
 
-        #copy-link{
+        #copy-link {
             margin-top: 20px;
-            width:100px;
+            width: 100px;
+        }
+
+        #myInput{
+            visibility: visible;
         }
 
     </style>
@@ -43,9 +47,8 @@
 <body>
 <div class="row text-center">
     <div class="body-content container justify-content-center">
-            <input type="text" value="" id="myInput">
-            <button type="button" class="btn btn-danger" id="copy-link" onclick="copyLink()">
-            </button>
+        <input type="text" value="" id="myInput">
+        <button type="button" class="btn btn-danger" id="copy-link" onclick="copyLink()">copy link</button>
         <div class="container">
             <div class="row" id="video-grid"></div>
         </div>
