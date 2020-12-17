@@ -12,7 +12,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "ignorePatterns": ["./node_modules","public/script.js"],
+  "ignorePatterns": ["./node_modules","public"],
   "rules": {
     "no-console": "off",
     "prettier/prettier": "error",
